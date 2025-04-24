@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFB200;
+ 
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: rgb(253, 252, 252);
+  font-size: 72px;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 4px 1px 0 #010101, 9px 3px 0 #030303, -1px -1px 0 #030303, 7px -1px 0 #060606;
+  
+  
+}
+.titulo img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: -100px;
+  margin-top: -62px;
+}
+
+.subtitulo {
+  color: rgb(251, 246, 246);
+  font-size: 60px;
+  margin-top: 30px;
+  text-shadow: 4px 1px 0 #010101, -1px 1px 0 #030303, -1px -1px 0 #030303, 1px -1px 0 #060606;
+  
+}
+
+
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  font-size: 25px;
+  width: 200px;
+  height: 130px;
+  background: #EB5B00;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 3px solid black;
+  text-shadow: 4px 1px 0 #010101, -1px 1px 0 #030303, -1px -1px 0 #030303, 1px -1px 0 #060606;
+  
+}
+
+.tarjeta-de-mokepon img {
+  width: 100px;
+}
+.tarjetas-ataques img {
+ width: 100px;
+ height: 100px; 
+ margin-bottom: -33px;
+
+}
+
+
+#boton-mascota {
+  color: #f6f4f4;
+    width: 125px;
+    height: 40px;
+    background-color:#EB5B00;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 25px;
+    border: 3px solid black;
+    border-radius: 20px ;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #010101, -1px 1px 0 #030303, -1px -1px 0 #030303, 1px -1px 0 #060606;
+    
+}
+
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #fd6303;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.boton-de-ataque {
+  background-color: #EB5B00;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 3px solid black;
+  width: 200px;
+  height: 130px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  text-shadow: 1px 1px 0 #010101, -1px 1px 0 #030303, -1px -1px 0 #030303, 1px -1px 0 #060606;
+}
+
+#mensajes {
+  width: 280px;
+  background: #EB5B00;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 0 #010101, -1px 1px 0 #030303, -1px -1px 0 #030303, 1px -1px 0 #060606;
+}
+
+#boton-reiniciar {
+  width: 90px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 20px;
+  color: #f9fafc;
+  background-color: #FFB200;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  text-shadow: 1px 1px 0 #010101, -1px 1px 0 #030303, -1px -1px 0 #030303, 1px -1px 0 #060606;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: white;
+  text-shadow: 1px 1px 0 #010101, -1px 1px 0 #030303, -1px -1px 0 #030303, 1px -1px 0 #060606;
+  width: 190px;
+  height: 20px;
+  
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 30px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 30px;
+}
+.vidas {
+  font-size: 70px;
+  letter-spacing: 5px;
+  transition:all 0.3s ease;
+}
+.jugador {
+  color: white
+}
+.enemigo {
+  color: white;
+}
+
+
+.ataques-jugador, .ataques-enemigo {
+  background-color: #EB5B00;
+  border: solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 360px) {
+  .tarjetas, .tarjetas-ataques, .titulo, .subtitulo, .titulo img, .boton-de-ataque,.tarjetas-ataques img {
+
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    max-width: 360px;
+   }
+}
+    
+  
